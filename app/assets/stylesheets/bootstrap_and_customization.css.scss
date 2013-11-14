@@ -1,4 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-$font-family: 'Sintony', sans-serif;
+$font-family-sans-serif:	'Droid Sans', sans-serif;
+$navbar-default-bg:			#5a86ff;
+$navbar-default-link-color:	white;
 
-@import 'bootstrap';
+
+
+ @import 'bootstrap';
+
+.btn-huge {
+	font-size: 24px;
+}
+
+.index-img {
+	background: asset-url('index.jpg');
+	height: 500px;
+	width: 1000px;
+	background-repeat: no-repeat;
+}
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+     font-size: 24px;
+}
