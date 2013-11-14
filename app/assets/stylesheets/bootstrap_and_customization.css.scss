@@ -1,23 +1,37 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
-$font-family-sans-serif:	'Droid Sans', sans-serif;
-$navbar-default-bg:			#5a86ff;
-$navbar-default-link-color:	white;
-
-
+$font-family-sans-serif:	'Droid Sans', sans-serif;	
+$navbar-default-bg:		#F2F2F2;
 
  @import 'bootstrap';
 
-.btn-huge {
-	font-size: 24px;
+.header-h1	{
+	font-size: 40px;
 }
 
-.index-img {
-	background: asset-url('index.jpg');
-	height: 500px;
-	width: 1000px;
-	background-repeat: no-repeat;
+.header-h2	{
+	font-size: 20px;
 }
+
+.btn-huge {
+	font-size: 24px;
+	width:	 300px;
+}
+
+.btn-small	{
+	margin-top: .2cm;
+	height: 35px;
+}
+
+#Not used
+.index-header-bg {
+	background: #2E2E2E;
+	color: #BDBDBD;
+}
+
+.index-header-image {
+	 background: asset-url('index.png');
+} 
 
 .center {
      text-align: center;
@@ -26,4 +40,8 @@ $navbar-default-link-color:	white;
 .navbar-brand {
      font-weight: bold;
      font-size: 24px;
+}
+
+.navbar { 
+	margin-bottom: 0; 
 }
