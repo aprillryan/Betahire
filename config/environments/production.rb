@@ -80,5 +80,5 @@ Betahire::Application.configure do
 
   #Required for Heroku
   #Note to set for proper domain
-  config.action_mailer.default_url_options = { :host => 'http://ancient-atoll-8200.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'http://ryan-mojo.herokuapp.com/' }
 end

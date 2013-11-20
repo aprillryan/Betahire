@@ -44,19 +44,32 @@ $navbar-default-border: none;
 	color: white;
 }
 
+.btn-success a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-success a:visited {
+	color: white;
+}
+
 .btn-small	{
-	margin-top: .2cm;
-	height: 35px;
+	color: white;	
+	margin-top: .15cm;
+	height: 40px;
+	padding: 10px;
 }
 
 .btn-huge {
 	font-size: 20px;
+	padding: 10px;
 	width:	 200px;
 	height: 50px;
 }
 
 .btn-huge-two {
 	font-size: 20px;
+	padding: 10px;
 	width:	 200px;
 	height: 50px;
 }

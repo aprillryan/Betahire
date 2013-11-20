@@ -8,9 +8,9 @@
 		</div>
 		<div class='col-lg-30 col-md-30 col-sm-30'>
 			<div style="float:left; margin-right:30px">
-				<button type="button" class="btn btn-huge btn-success">Apply - It's Free</button> 
+				<%= link_to "Apply - It's Free", new_user_registration_path, class: "btn btn-huge btn-success" %> 
 			</div>
-			<button type="button" class="btn btn-huge-two btn-default">Sign In</button>
+				<%= link_to "Sign In", new_user_session_path, class: "btn btn-huge-two btn-default" %> 
 		</div>
 		<div style="float:left; margin-bottom:90px; margin-right: 105px">
 			<br>
@@ -156,4 +156,4 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> 
