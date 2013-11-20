@@ -34,9 +34,7 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 # Devise
 gem 'devise', '~> 3.1.1'
 
-group :development, :test do
-	gem 'sqlite3'
-end
+gem 'sqlite3', :group => [:development, :test]
 
 group :production do
 	gem 'pg'
