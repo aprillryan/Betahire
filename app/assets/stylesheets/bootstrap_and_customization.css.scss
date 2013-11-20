@@ -1,9 +1,71 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
 $font-family-sans-serif:	'Droid Sans', sans-serif;	
-$navbar-default-bg:		#F2F2F2;
+$navbar-default-link-color: #2E2E2E;
+$navbar-default-link-hover-color: #585858;
+$navbar-default-brand-hover-color: #2E2E2E;
+$navbar-default-border: none;
 
  @import 'bootstrap';
+
+.navbar-default {
+	opacity: .9;
+	font-weight: bold;
+}
+
+.navbar-header {
+	border: none;
+}
+
+.navbar-brand a:visited {
+	color: #2E2E2E;
+	}
+
+.navbar-brand a:link {
+	color: #2E2E2E;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-brand a:hover {
+	color: #2E2E2E;
+	text-decoration: none;
+}
+
+.btn-default {
+	background: #585858;
+	color: white;
+	opacity: .9;
+	border: none;
+}
+
+.btn-default:hover {
+	background: #6E6E6E;
+	color: white;
+}
+
+.btn-small	{
+	margin-top: .2cm;
+	height: 35px;
+}
+
+.btn-huge {
+	font-size: 20px;
+	width:	 200px;
+	height: 50px;
+}
+
+.btn-huge-two {
+	font-size: 20px;
+	width:	 200px;
+	height: 50px;
+}
+
+.btn-huge-three {
+	font-size: 20px;
+	width:	 250px;
+	height: 65px;
+}
 
 .header-h1	{
 	font-size: 40px;
@@ -13,35 +75,127 @@ $navbar-default-bg:		#F2F2F2;
 	font-size: 20px;
 }
 
-.btn-huge {
-	font-size: 24px;
-	width:	 300px;
+.header-h3	{
+	font-size: 20px;
+	font-weight: bold;
+	color: #384047;
 }
 
-.btn-small	{
-	margin-top: .2cm;
-	height: 35px;
-}
-
-#Not used
-.index-header-bg {
-	background: #2E2E2E;
-	color: #BDBDBD;
+.header-h4	{
+	font-size: 14px;
+	font-weight: bold;
+	color: #384047;
 }
 
 .index-header-image {
-	 background: asset-url('index.png');
+	 background: asset-url('bull2.png');
 } 
 
-.center {
-     text-align: center;
+.first-index-container {
+	color: white;
 }
 
-.navbar-brand {
-     font-weight: bold;
-     font-size: 24px;
+.second-index-container {
+	background-color: white;
 }
 
-.navbar { 
-	margin-bottom: 0; 
+.third-index-container {
+	background-color: #E6E6E6;
 }
+
+.fourth-index-container {
+	background-color: white;
+}
+
+.fifth-index-container {
+	background-color: #E6E6E6;
+}
+
+.sixth-index-container {
+	background-color: white;
+}
+
+.seventh-index-container {
+	background-color: #E6E6E6;
+}
+
+.eighth-index-container {
+	background-color: #E6E6E6;
+}
+
+.footer {
+	background-color: white;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+footer {
+	padding:5px 0;
+	background-color:#555;
+	
+}
+
+.footer a:visited {
+	color: #585858;
+	}
+
+.footer a:link {
+	color: #585858;
+	font-size: 16px;
+	padding: 30px;
+}
+
+.footer a:hover {
+	color: #848484;
+	text-decoration: none;
+}
+
+.quarry-filters {
+	margin:-20px 0 0 0
+}
+
+.quarry-tabs {
+	padding:10px 0 0;
+	background:#ebebee;
+}
+
+.test {
+	background:#ebebee; 
+}
+
+.quarry-filters .quarry-tabs ul.nav-tabs>li {
+	float:left;
+	width:12.5%;
+}
+
+.quarry-filters .quarry-tabs ul.nav-tabs>li>a {
+	background:#fff;
+	background:-webkit-gradient(linear,left bottom,left top,color-stop(0,#f4f4f7),color-stop(1,#fff));
+	background-clip:padding-box;
+	margin:0 5px 0 0;
+	padding:8px;
+	font-size:12px;
+	line-height:14px;
+	color:#999;
+	height:50px;font-weight:400;
+	text-align:center;
+	cursor:pointer;
+}
+
+.quarry-filters .quarry-tabs ul.nav-tabs>li>a:hover {
+	text-decoration:none;
+	color:#555;
+}
+
+.quarry-filters .quarry-tabs ul.nav-tabs>li.active>a {
+	background:#FFF;
+	color:gray;
+}
+
+.trent-container {
+	margin-top:-66px}@media (min-width: 768px) and (max-width: 991px){body.c_home.a_index .talent-advocate .trent-container{margin-top:3px}
+}
+
+.question{text-align:center}
