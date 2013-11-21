@@ -5,6 +5,8 @@ $navbar-default-link-color: #2E2E2E;
 $navbar-default-link-hover-color: #585858;
 $navbar-default-brand-hover-color: #2E2E2E;
 $navbar-default-border: none;
+$link-color: #2E2E2E;
+$link-hover-color: #585858;
 
  @import 'bootstrap';
 
@@ -41,9 +43,11 @@ $navbar-default-border: none;
 }
 
 footer {
+	left: 0px;
+	bottom: 0px;
 	padding:5px 0;
 	background-color:#555;
-	
+   	width:100%;
 }
 
 .footer a:visited {
