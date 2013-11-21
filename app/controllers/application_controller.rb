@@ -10,4 +10,3 @@ def update_sanitized_params
 end
 
 end
-
