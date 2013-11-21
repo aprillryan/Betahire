@@ -32,6 +32,35 @@ $navbar-default-border: none;
 	text-decoration: none;
 }
 
+.footer {
+	background-color: white;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+footer {
+	padding:5px 0;
+	background-color:#555;
+	
+}
+
+.footer a:visited {
+	color: #585858;
+	}
+
+.footer a:link {
+	color: #585858;
+	font-size: 16px;
+	padding: 30px;
+}
+
+.footer a:hover {
+	color: #848484;
+	text-decoration: none;
+}
+
 .btn-default {
 	background: #585858;
 	color: white;
@@ -132,83 +161,11 @@ $navbar-default-border: none;
 	background-color: #E6E6E6;
 }
 
-.eighth-index-container {
-	background-color: #E6E6E6;
-}
-
-.footer {
-	background-color: white;
-	font-size: 14px;
-	color: black;
-	text-align: center;
-	padding: 10px;
-}
-
-footer {
-	padding:5px 0;
-	background-color:#555;
-	
-}
-
-.footer a:visited {
-	color: #585858;
-	}
-
-.footer a:link {
-	color: #585858;
-	font-size: 16px;
-	padding: 30px;
-}
-
-.footer a:hover {
-	color: #848484;
-	text-decoration: none;
-}
-
-.quarry-filters {
-	margin:-20px 0 0 0
-}
-
-.quarry-tabs {
-	padding:10px 0 0;
-	background:#ebebee;
-}
-
-.test {
-	background:#ebebee; 
-}
-
-.quarry-filters .quarry-tabs ul.nav-tabs>li {
-	float:left;
-	width:12.5%;
-}
-
-.quarry-filters .quarry-tabs ul.nav-tabs>li>a {
-	background:#fff;
-	background:-webkit-gradient(linear,left bottom,left top,color-stop(0,#f4f4f7),color-stop(1,#fff));
-	background-clip:padding-box;
-	margin:0 5px 0 0;
-	padding:8px;
-	font-size:12px;
-	line-height:14px;
-	color:#999;
-	height:50px;font-weight:400;
-	text-align:center;
-	cursor:pointer;
-}
-
-.quarry-filters .quarry-tabs ul.nav-tabs>li>a:hover {
-	text-decoration:none;
-	color:#555;
-}
-
-.quarry-filters .quarry-tabs ul.nav-tabs>li.active>a {
-	background:#FFF;
-	color:gray;
-}
-
 .trent-container {
 	margin-top:-66px}@media (min-width: 768px) and (max-width: 991px){body.c_home.a_index .talent-advocate .trent-container{margin-top:3px}
 }
 
-.question{text-align:center}
+.sign-up-container {
+	margin:-20px 0 0 0;
+	background: #E6E6E6;
+}

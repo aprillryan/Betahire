@@ -25,7 +25,7 @@
             <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
           <% else %>
             <li><a href="#">Sign in</a></li>
-            <li><button type="button" class="btn btn-small btn-success"><%= link_to "Apply", new_user_session_path %></button></li>
+            <li><button type="button" class="btn btn-small btn-success"><%= link_to "Apply", new_user_registration_path %></button></li>
           <% end %>
         </ul>
       </div>

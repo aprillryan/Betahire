@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 
 # Devise
-gem 'devise', '~> 3.1.1'
+gem 'devise', '~> 3.2.1'
 
 group :development, :test do
 	gem 'sqlite3'
