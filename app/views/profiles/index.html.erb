@@ -1,0 +1,26 @@
+<h1>Listing profiles</h1>
+
+<div class="container">
+<% @profiles.each do |profile| %>
+<tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
+<td class="list_description">
+<dl>
+<dt><%= profile.name %></dt>
+<dt><%= profile.email %></dt>
+<dt><%= profile.phone %></dt>
+<dt><%= profile.headline %></dt>
+</dl>
+</td>
+<td class="list_actions">
+<%= link_to 'Show', profile %><br/>
+<%= link_to 'Edit', edit_profile_path(profile) %><br/>
+<%= link_to 'Destroy', profile, method: :delete,
+data: { confirm: 'Are you sure?' } %>
+</td>
+</tr>
+<% end %>
+</table>
+<br />
+</div>
+
+<%= link_to 'New Profile', new_profile_path %>

@@ -1,3 +1,104 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.btn-default {
+	background: #585858;
+	color: white;
+	opacity: .9;
+	border: none;
+}
+
+.btn-default:hover {
+	background: #6E6E6E;
+	color: white;
+}
+
+.btn-success a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.btn-success a:visited {
+	color: white;
+}
+
+.btn-small	{
+	color: white;	
+	margin-top: .15cm;
+	height: 40px;
+	padding: 10px;
+}
+
+.btn-huge {
+	font-size: 20px;
+	padding: 10px;
+	width:	 200px;
+	height: 50px;
+}
+
+.btn-huge-two {
+	font-size: 20px;
+	padding: 10px;
+	width:	 200px;
+	height: 50px;
+}
+
+.btn-huge-three {
+	font-size: 20px;
+	width:	 250px;
+	height: 65px;
+}
+
+.header-h1	{
+	font-size: 40px;
+}
+
+.header-h2	{
+	font-size: 20px;
+}
+
+.header-h3	{
+	font-size: 20px;
+	font-weight: bold;
+	color: #384047;
+}
+
+.header-h4	{
+	font-size: 14px;
+	font-weight: bold;
+	color: #384047;
+}
+
+.index-header-image {
+	 background: asset-url('bull2.png');
+	 background-repeat: no-repeat;
+} 
+
+.first-index-container {
+	color: white;
+}
+
+.second-index-container {
+	background-color: white;
+}
+
+.third-index-container {
+	background-color: #E6E6E6;
+}
+
+.fourth-index-container {
+	background-color: white;
+}
+
+.fifth-index-container {
+	background-color: #E6E6E6;
+}
+
+.sixth-index-container {
+	background-color: white;
+}
+
+.seventh-index-container {
+	background-color: #E6E6E6;
+}
+
+.trent-container {
+	margin-top:-66px}@media (min-width: 768px) and (max-width: 991px){body.c_home.a_index .talent-advocate .trent-container{margin-top:3px}
+}

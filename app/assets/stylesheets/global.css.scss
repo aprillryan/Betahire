@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+$font-family-sans-serif:	'Droid Sans', sans-serif;	
+$navbar-default-link-color: #2E2E2E;
+$navbar-default-link-hover-color: #585858;
+$navbar-default-brand-hover-color: #2E2E2E;
+$navbar-default-border: none;
+$link-color: #2E2E2E;
+$link-hover-color: #585858;
+
+ @import 'bootstrap';
+
+.navbar-default {
+	opacity: .9;
+	font-weight: bold;
+}
+
+.navbar-header {
+	border: none;
+}
+
+.navbar-brand a:visited {
+	color: #2E2E2E;
+	}
+
+.navbar-brand a:link {
+	color: #2E2E2E;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.navbar-brand a:hover {
+	color: #2E2E2E;
+	text-decoration: none;
+}
+
+.footer {
+	background-color: white;
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	padding: 10px;
+}
+
+footer {
+	left: 0px;
+	bottom: 0px;
+	padding:5px 0;
+	background-color:#555;
+   	width:100%;
+}
+
+.footer a:visited {
+	color: #585858;
+	}
+
+.footer a:link {
+	color: #585858;
+	font-size: 16px;
+	padding: 30px;
+}
+
+.footer a:hover {
+	color: #848484;
+	text-decoration: none;
+}
