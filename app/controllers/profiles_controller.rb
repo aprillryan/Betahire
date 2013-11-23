@@ -1,10 +1,12 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
+  before_action :correct_user, only: [:edit, :update, :destroy]
+  before_action :authenticate_user!, except: [ :index]
 
   # GET /profiles
   # GET /profiles.json
   def index
-    @profiles = Profile.all
+    @profiles = current_user.profiles
   end
 
   # GET /profiles/1
@@ -14,7 +16,7 @@ class ProfilesController < ApplicationController
 
   # GET /profiles/new
   def new
-    @profile = Profile.new
+    @profiles = current_user.profiles.build
   end
 
   # GET /profiles/1/edit
@@ -24,8 +26,7 @@ class ProfilesController < ApplicationController
   # POST /profiles
   # POST /profiles.json
   def create
-    @profile = Profile.new(params[:profile].permit( :name, :email, :phone, :headline))
-
+    @profile = current_user.profiles.build(params[:profile].permit( :name, :email, :phone, :headline))
 
     respond_to do |format|
       if @profile.save
@@ -42,8 +43,9 @@ class ProfilesController < ApplicationController
   # PATCH/PUT /profiles/1
   # PATCH/PUT /profiles/1.json
   def update
+
     respond_to do |format|
-      if @profile.update(profile_params)
+      if @profile.update(params[:profile].permit( :name, :email, :phone, :headline))
         format.html { redirect_to @profile, notice: 'Profile was successfully updated.' }
         format.json { head :no_content }
       else
@@ -66,7 +68,12 @@ class ProfilesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_profile
-      @profile = Profile.find(params[:id])
+     @profile = Profile.find(params[:id])
+    end
+
+    def correct_user
+      @profile = current_user.profiles.find_by(id: params[:id])
+      redirect_to profiles_path, notice: "Not authorized to edit this profile" if @profile.nil?
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -8,5 +8,5 @@ class User < ActiveRecord::Base
   validates :location, presence: true
   validates :phone, presence: true
 
-
+  has_many :profiles
 end

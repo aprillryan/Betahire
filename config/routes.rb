@@ -4,5 +4,5 @@ Betahire::Application.routes.draw do
   devise_for :users, :controllers => { :registrations => "registrations" }
   root "pages#home" 
   get  "about" => "pages#about"
-  match "profile" => "profiles#show", via: :get
+  get "edit" => "profiles#edit"
 end
